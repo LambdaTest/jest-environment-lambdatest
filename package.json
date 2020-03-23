@@ -1,0 +1,79 @@
+{
+  "name": "jest-environment-lambdatest",
+  "version": "1.0.0",
+  "description": "an environment for using LambdaTest with Jest",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "homepage": "https://github.com/LambdaTest/jest-environment-lambdatest#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LambdaTest/jest-environment-lambdatest.git"
+  },
+  "engines": {
+    "node": ">= 8.17.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts src/*",
+    "lint:fix": "eslint --ext .ts src/* --fix",
+    "prettier": "prettier --write \"**/*.{md,ts}\"",
+    "test": "npm run build && jest --runInBand --ci"
+  },
+  "keywords": [
+    "jest",
+    "lambdatest",
+    "e2e",
+    "visual-testing",
+    "test",
+    "integration-test"
+  ],
+  "author": "LambdaTest <keys@lambdatest.com>",
+  "contributors": [
+    "LambdaTest <keys@lambdatest.com> (https://www.npmjs.com/~lambdatestdev)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@jest/types": "~25.1.0",
+    "@types/selenium-webdriver": "~4.0.3",
+    "@lambdatest/node-tunnel": "*",
+    "jest-environment-node": "~25.1.0",
+    "selenium-webdriver": "~4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "@types/jest": "~25.1.2",
+    "@types/node": "~12.12.30",
+    "@typescript-eslint/eslint-plugin": "~2.24.0",
+    "@typescript-eslint/parser": "~2.24.0",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "~6.10.0",
+    "eslint-plugin-prettier": "~3.1.1",
+    "jest": "~24.9.0",
+    "prettier": "~1.19.1",
+    "ts-jest": "~24.3.0",
+    "typescript": "~3.8.3"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testEnvironment": "./lib/index.js",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "lambdatest": {
+        "capabilities": {
+          "build": "jest and lambdatest with tunnel",
+          "name": "jest demo",
+          "platform": "Windows 10",
+          "browserName": "Chrome",
+          "version": "80.0",
+          "tunnel": true
+        },
+        "tunnelOpts": {
+          "logFile":"local.log"
+        }
+      }
+    }
+  }
+}

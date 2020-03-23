@@ -1,0 +1,31 @@
+/**
+ * @jest-environment-lambdatest
+ */
+const { toMatchImageSnapshot } = require('jest-image-snapshot');
+
+expect.extend({ toMatchImageSnapshot });
+
+describe('visual testing VisualTest', () => {
+  let driver;
+
+  beforeAll(async () => {
+    driver = await global.__driver__();
+
+    await driver.get('http://localhost:8080');
+  }, 20000);
+
+  afterAll(async () => {
+    await driver.quit();
+  });
+
+  it('check the app', async () => {
+    const title = await driver.getTitle();
+
+    expect(title).toBe('React App');
+  });
+
+  it('take and screenshot and compare', async () => {
+    const image = await driver.takeScreenshot();
+    return expect(image).toMatchImageSnapshot();
+  });
+});
