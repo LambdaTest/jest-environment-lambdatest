@@ -19,7 +19,7 @@ export default class LambdaTestEnvironment extends NodeEnvironment {
   constructor(config: Config.ProjectConfig) {
     super(config);
 
-    let {
+    const {
       lambdatest: { capabilities, seleniumHubUrl = null, tunnelOpts = null },
     } = config.globals;
 
@@ -43,11 +43,12 @@ export default class LambdaTestEnvironment extends NodeEnvironment {
       this.tunnelOpts = tunnelOpts;
     }
     const GRID_HOST = process.env.LT_GRID_HOST || 'hub.lambdatest.com/wd/hub';
-    if (!seleniumHubUrl) {
-      seleniumHubUrl = 'https://' + this.lambdaCapabilities.userName + ':' + this.lambdaCapabilities.accessKey + '@' + GRID_HOST;
+    let _seleniumHubUrl = seleniumHubUrl;
+    if (!_seleniumHubUrl) {
+      _seleniumHubUrl = 'https://' + this.lambdaCapabilities.userName + ':' + this.lambdaCapabilities.accessKey + '@' + GRID_HOST;
     }
 
-    this.selHubUrl = seleniumHubUrl;
+    this.selHubUrl = _seleniumHubUrl;
     this.drivers = new Array<WebDriver>();
   }
 
