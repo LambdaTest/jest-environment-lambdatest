@@ -1,4 +1,4 @@
-import { WebDriver, By } from 'selenium-webdriver';
+import { WebDriver } from 'selenium-webdriver';
 
 describe('NPM', () => {
   let driver: WebDriver;
