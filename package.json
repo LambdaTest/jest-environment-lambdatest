@@ -71,7 +71,7 @@
           "tunnel": true
         },
         "tunnelOpts": {
-          "logFile":"local.log"
+          "logFile": "local.log"
         }
       }
     }
