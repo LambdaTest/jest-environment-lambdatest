@@ -14,15 +14,8 @@ describe('Github', () => {
     await driver.quit();
   });
 
-  it('has an author', async () => {
-    const authorSpan = await driver.findElement(By.css('.author'));
-    const author = await authorSpan.getText();
-    expect(author).toBe('LambdaTest');
-  });
-
-  it('has a repository name', async () => {
-    const repoSpan = await driver.findElement(By.css('h1.public strong'));
-    const repo = await repoSpan.getText();
-    expect(repo).toBe('jest-environment-lambdatest');
+  it('get title from GitHub', async () => {
+    const title = await driver.getTitle();
+    expect(title).toBe('GitHub - LambdaTest/jest-environment-lambdatest');
   });
 });

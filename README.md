@@ -1,6 +1,6 @@
 # jest-environment-lambdatest
 
-[![Actions Status](https://github.com/LambdaTest/jest-environment-lambdatest/workflows/Node%20CI/badge.svg)](https://github.com/LambdaTest/jest-environment-lambdatest/actions) [![npm version](http://img.shields.io/npm/v/jest-environment-lambdatest.svg?style=flat)](https://npmjs.org/package/jest-environment-lambdatest 'View this project on npm') [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7b1839cead7743a69be711dd6c1c022c)](https://www.codacy.com/manual/baudin.jean/jest-environment-lambdatest?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LambdaTest/jest-environment-lambdatest&amp;utm_campaign=Badge_Grade)
+![Integration tests](https://github.com/LambdaTest/jest-environment-lambdatest/workflows/Integration%20tests/badge.svg?branch=master&event=push) [![npm version](http://img.shields.io/npm/v/jest-environment-lambdatest.svg?style=flat)](https://npmjs.org/package/jest-environment-lambdatest 'View this project on npm')
 
 Use Jest as test-runner for running your visual-tests and more using LambdaTest.
 
@@ -84,11 +84,11 @@ describe('my visual test', () => {
   beforeAll(async () => {
     // you can override the default configuration
     driver = await global.__driver__({
-      build: "jest and lambdatest",
-      name: "jest demo",
-      platform: "Windows 10",
-      browserName: "Chrome",
-      version: "80.0"
+      build: 'jest and lambdatest',
+      name: 'jest demo',
+      platform: 'Windows 10',
+      browserName: 'Chrome',
+      version: '80.0',
     });
     driver.get('https://www.lambdatest.com');
   }, 20000); // this timeout is required because starting a session in LambdaTest can take ages
