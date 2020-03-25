@@ -1,6 +1,6 @@
 # jest-environment-lambdatest
 
-![Actions Status](https://github.com/LambdaTest/jest-environment-lambdatest/workflows/Integration%20tests/badge.svg?branch=master&event=push) [![npm version](http://img.shields.io/npm/v/jest-environment-lambdatest.svg?style=flat)](https://npmjs.org/package/jest-environment-lambdatest 'View this project on npm')
+![Actions Status](https://github.com/LambdaTest/jest-environment-lambdatest/workflows/Actions%20Status/badge.svg?branch=master&event=push) [![npm version](http://img.shields.io/npm/v/jest-environment-lambdatest.svg?style=flat)](https://npmjs.org/package/jest-environment-lambdatest 'View this project on npm')
 
 Use Jest as test-runner for running your visual-tests and more using LambdaTest.
 

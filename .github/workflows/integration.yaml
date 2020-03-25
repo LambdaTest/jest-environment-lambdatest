@@ -1,4 +1,4 @@
-name: Integration tests
+name: Actions Status
 on:
   push:
     branches:
