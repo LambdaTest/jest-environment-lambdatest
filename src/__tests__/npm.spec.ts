@@ -8,7 +8,7 @@ describe('NPM', () => {
     // @ts-ignore
     driver = await global.__driver__();
     await driver.get('https://www.npmjs.com/package/jest-environment-lambdatest');
-  }, 20000);
+  }, 50000);
 
   afterAll(async () => {
     await driver.quit();

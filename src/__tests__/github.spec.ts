@@ -8,7 +8,7 @@ describe('Github', () => {
     // @ts-ignore
     driver = await global.__driver__();
     await driver.get('https://github.com/LambdaTest/jest-environment-lambdatest');
-  }, 20000);
+  }, 50000);
 
   afterAll(async () => {
     await driver.quit();
