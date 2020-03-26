@@ -123,6 +123,27 @@ yarn test
 
 The `test` script will run a basic e2e tests, a visual tests making a snapshot of the web-app and the unit-tests.
 
-## Bug and more
+## Contribute
 
-Feel free to open an issue on GitHub or to contribute by opening a pull-request.
+#### Reporting bugs
+
+Our GitHub Issue Tracker will help you log bug reports.
+
+Tips for submitting an issue:
+Keep in mind, you don't end up submitting two issues with the same information. Make sure you add a unique input in every issue that you submit. You could also provide a "+1" value in the comments.
+
+Always provide the steps to reproduce before you submit a bug.
+Provide the environment details where you received the issue i.e. Browser Name, Browser Version, Operating System, Screen Resolution and more.
+Describe the situation that led to your encounter with bug.
+Describe the expected output, and the actual output precisely.
+
+#### Pull Requests
+
+We don't want to pull breaks in case you want to customize your LambdaTest experience. Before you proceed with implementing pull requests, keep in mind the following.
+Make sure you stick to coding conventions.
+Once you include tests, ensure that they all pass.
+Make sure to clean up your Git history, prior your submission of a pull-request. You can do so by using the interactive rebase command for committing and squashing, simultaneously with minor changes + fixes into the corresponding commits.
+
+## About LambdaTest
+
+[LambdaTest](https://www.lambdatest.com/) is a cloud based selenium grid infrastructure that can help you run automated cross browser compatibility tests on 2000+ different browser and operating system environments. LambdaTest supports all programming languages and frameworks that are supported with Selenium, and have easy integrations with all popular CI/CD platforms. It's a perfect solution to bring your [selenium automation testing](https://www.lambdatest.com/selenium-automation) to cloud based infrastructure that not only helps you increase your test coverage over multiple desktop and mobile browsers, but also allows you to cut down your test execution time by running tests on parallel.
