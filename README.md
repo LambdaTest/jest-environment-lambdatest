@@ -30,7 +30,7 @@ Assuming your configuration is defined in your `package.json`, add the following
           "name": "jest demo",
           "platform": "Windows 10",
           "browserName": "Chrome",
-          "version": "80.0"
+          "version": "latest"
         }
       }
     }
@@ -54,7 +54,7 @@ Assuming here also your configuration is defined in your `package.json`, add the
           "name": "jest demo",
           "platform": "Windows 10",
           "browserName": "Chrome",
-          "version": "80.0",
+          "version": "latest",
           "tunnel": true
         },
         "tunnelOpts": {}
