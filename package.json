@@ -1,6 +1,6 @@
 {
   "name": "jest-environment-lambdatest",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "an environment for using LambdaTest with Jest",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -35,7 +35,7 @@
   "dependencies": {
     "@jest/types": "~25.1.0",
     "@types/selenium-webdriver": "~4.0.3",
-    "@lambdatest/node-tunnel": "*",
+    "@lambdatest/node-tunnel": "^3.0.7",
     "jest-environment-node": "~25.1.0",
     "selenium-webdriver": "~4.0.0-alpha.5"
   },
