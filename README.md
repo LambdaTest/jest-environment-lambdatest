@@ -1,4 +1,4 @@
-# Run Jest Environment Tests on TestMu AI (Formerly LambdaTest)
+﻿# Run Jest Tests on TestMu AI (Formerly LambdaTest)
 
 <p align="center">
   <a href="https://www.testmuai.com/"><img src="https://img.shields.io/badge/MADE%20BY%20TestMu%20AI-000000.svg?style=for-the-badge&labelColor=000" alt="Made by TestMu AI"></a>
@@ -17,9 +17,9 @@ With TestMu AI (Formerly LambdaTest), you can run Jest-based visual tests and Se
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (LTS version recommended).
-- [Jest](https://jestjs.io/) installed in your project.
-- A [TestMu AI account](https://www.testmuai.com/register/). Retrieve your **Username** and **Access Key** from the [TestMu AI Automation Dashboard](https://automation.testmuai.com/).
+- Node.js (LTS version recommended).
+- Jest installed in your project.
+- A TestMu AI account. Retrieve your **Username** and **Access Key** from the TestMu AI Automation Dashboard.
 
 ### Setup
 
